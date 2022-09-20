@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 // import styled from 'styled-components';
-import s from './Header.module.css';
-export const Header = () => {
+import s from './SharedLayout.module.css';
+export const SharedLayout = () => {
   // const StyledLink = styled(NavLink)`
   //   color: black;
 
