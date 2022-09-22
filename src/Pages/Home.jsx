@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { fetchMovieTrend } from 'service/API';
 import PropTypes from 'prop-types';
 
-export const Home = () => {
+export default function Home() {
   const [trending, setTrending] = useState(null);
   const location = useLocation();
   useEffect(() => {
@@ -13,7 +13,6 @@ export const Home = () => {
   if (!trending) {
     return null;
   }
-  console.log(trending);
   return (
     <ul>
       {trending.map(({ id, original_title }) => {
@@ -27,7 +26,7 @@ export const Home = () => {
       })}
     </ul>
   );
-};
+}
 
 Home.propTypes = {
   trending: PropTypes.arrayOf(

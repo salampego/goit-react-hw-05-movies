@@ -4,7 +4,7 @@ import { fetchMovieCredits } from 'service/API';
 import morph from '../images/unknow_actor.jpg';
 import PropTypes from 'prop-types';
 
-export const Cast = () => {
+export default function Cast() {
   const [movieCredits, setMovieCredits] = useState(null);
   const { id } = useParams();
 
@@ -37,7 +37,7 @@ export const Cast = () => {
       })}
     </ul>
   );
-};
+}
 
 Cast.propTypes = {
   movieCredits: PropTypes.arrayOf(
@@ -47,5 +47,5 @@ Cast.propTypes = {
       name: PropTypes.string.isRequired,
       character: PropTypes.string.isRequired,
     })
-  ).isRequired,
+  ),
 };

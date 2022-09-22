@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import { fetchMovieReviews } from 'service/API';
 
-export const Reviews = () => {
+export default function Reviews() {
   const [movieReviews, setMovieReviews] = useState(null);
   const { id } = useParams();
   useEffect(() => {
@@ -28,7 +28,7 @@ export const Reviews = () => {
   ) : (
     <p>We don't have any review for this movie</p>
   );
-};
+}
 
 Reviews.propTypes = {
   movieReviews: PropTypes.arrayOf(

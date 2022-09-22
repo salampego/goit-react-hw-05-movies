@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { useParams, Link, useLocation, Outlet } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { fetchMovieMore } from 'service/API';
 import s from './MovieDetails.module.css';
 
-export const MovieDetails = () => {
+export default function MovieDetails() {
   const [movie, setMovie] = useState(null);
   const { id } = useParams();
   const location = useLocation();
@@ -57,11 +57,12 @@ export const MovieDetails = () => {
           </Link>
         </li>
       </ul>
-
-      <Outlet />
+      <Suspense fallback={<div>Loading subpage...</div>}>
+        <Outlet />
+      </Suspense>
     </>
   );
-};
+}
 
 MovieDetails.propTypes = {
   movie: PropTypes.arrayOf(
