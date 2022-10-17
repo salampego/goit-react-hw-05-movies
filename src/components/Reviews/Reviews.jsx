@@ -16,7 +16,6 @@ export default function Reviews() {
   if (!movieReviews) {
     return null;
   }
-  console.log(movieReviews);
   return movieReviews.length > 0 ? (
     <ul className={s.list}>
       {movieReviews.map(({ id, content, author_details }) => {

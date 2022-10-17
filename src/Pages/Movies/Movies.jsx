@@ -34,7 +34,6 @@ export default function Movies() {
   const onHandleChange = e => {
     setSearchValue(e.currentTarget.value);
   };
-  console.log(movies);
 
   return (
     <>
