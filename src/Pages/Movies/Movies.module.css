@@ -1,0 +1,89 @@
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.btnSubmit {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 0;
+  background-image: url(./search_logo.svg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: #fff;
+  opacity: 0.6;
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  outline: none;
+}
+.searchBtn {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
+}
+.searchInput {
+  display: inline-block;
+  width: 100%;
+  font: inherit;
+  font-size: 20px;
+  border: none;
+  border-bottom: 2px solid #0de4ae;
+  outline: none;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.item {
+  width: 200px;
+  margin-top: 5px;
+  margin-right: 7px;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.item:hover,
+.item:focus {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+.link {
+  color: #000;
+  text-decoration: none;
+}
+.movies_title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+.rate {
+  background: linear-gradient(90deg, #1cc2e3, #1dbf71);
+  color: #fff;
+  font-weight: 700;
+  padding: 3px;
+  font-size: 12px;
+}

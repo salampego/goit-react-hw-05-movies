@@ -1,0 +1,11 @@
+.container {
+  margin-top: 15px;
+}
+.actorName {
+  background-color: #cce2cf;
+  padding-left: 5px;
+}
+.character {
+  background-color: #dcfdf2;
+  padding-left: 5px;
+}

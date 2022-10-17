@@ -1,0 +1,22 @@
+.list {
+  list-style: none;
+}
+.rate {
+  background: linear-gradient(90deg, #1cc2e3, #1dbf71);
+  color: #fff;
+  font-weight: 700;
+  padding: 3px;
+  font-size: 12px;
+}
+.reviewsAvatar {
+  border-radius: 50%;
+  width: 80px;
+  margin-top: 10px;
+}
+.reviewsDescription {
+  font-size: 12px;
+  width: 600px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
